@@ -1,3 +1,5 @@
 # Cloudflare Pages SPA redirects
-# This ensures all routes are handled by index.html for client-side routing
+# Static HTML pages (etherscan, about, token, transparency) are served
+# directly by Cloudflare Pages before this redirect rule applies.
+# Cloudflare Pages automatically serves .html files for extensionless URLs.
 /*    /index.html   200

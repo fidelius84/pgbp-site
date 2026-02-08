@@ -1,0 +1,10 @@
+/* TEAM */
+Issuer: PGBP PAYMENTS LTD
+Company No: 16925298
+Location: United Kingdom
+Contact: info@pgbp.io
+
+/* SITE */
+Standards: HTML5, CSS3, ECMAScript 2020
+Framework: React (Vite)
+Hosting: Cloudflare Pages

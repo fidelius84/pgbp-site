@@ -1,0 +1,3 @@
+Contact: mailto:security@pgbp.io
+Preferred-Languages: en
+Canonical: https://pgbp.io/.well-known/security.txt

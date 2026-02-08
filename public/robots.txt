@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /etherscan
+Allow: /about
+Allow: /token
+Allow: /transparency
+Allow: /PGBP_Whitepaper_v1.0.pdf
+
+Sitemap: https://pgbp.io/sitemap.xml

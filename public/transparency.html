@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transparency — Pegged GBP (PGBP)</title>
+  <meta name="description" content="PGBP transparency page: on-chain verification, official wallet addresses, supply details, and reserve information for Pegged GBP." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/png" sizes="128x128" href="/assets/PGBP_128.png" />
+  <link rel="canonical" href="https://pgbp.io/transparency" />
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif; margin: 0; padding: 0; color: #1e293b; background: #fff; line-height: 1.6; }
+    .container { max-width: 860px; margin: 0 auto; padding: 24px 16px; }
+    header { background: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 16px; }
+    header .inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+    header img { width: 28px; height: 28px; border-radius: 4px; }
+    header .brand { font-weight: 600; color: #135D68; letter-spacing: 0.05em; }
+    nav { margin-left: auto; font-size: 14px; }
+    nav a { margin-left: 16px; color: #135D68; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    h1 { color: #135D68; font-size: 28px; margin: 32px 0 8px; }
+    h2 { color: #135D68; font-size: 20px; margin: 28px 0 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { text-align: left; padding: 10px 12px; border: 1px solid #e2e8f0; }
+    th { background: #f8fafc; font-weight: 600; width: 200px; }
+    p { margin: 8px 0 16px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: #135D68; }
+    footer { border-top: 1px solid #e2e8f0; margin-top: 40px; padding: 20px 0; font-size: 13px; color: #64748b; }
+    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 13px; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <img src="/assets/PGBP_128.png" alt="PGBP logo" />
+      <span class="brand">PGBP</span>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/token">Token</a>
+        <a href="/transparency">Transparency</a>
+        <a href="/etherscan">Verification</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Transparency &amp; On-Chain Verification</h1>
+    <p>PGBP is committed to transparency. All token supply and transfers are publicly verifiable on the Ethereum blockchain. This page provides the key information needed to independently verify the PGBP token.</p>
+
+    <h2>Token Supply</h2>
+    <table>
+      <tr><th>Token Name</th><td>Pegged GBP</td></tr>
+      <tr><th>Symbol</th><td>PGBP</td></tr>
+      <tr><th>Total Supply</th><td>300,000,000 (fixed at deployment)</td></tr>
+      <tr><th>Contract Address</th><td class="mono">0x5239c659a13f043358d551360c3b8ff1251d76d9</td></tr>
+    </table>
+    <p>The total supply was minted once at contract deployment. Minting is permanently disabled. The contract is immutable and cannot be upgraded.</p>
+
+    <h2>On-Chain Verification</h2>
+    <p>Anyone can verify the following on Etherscan:</p>
+    <ul>
+      <li><strong>Total supply:</strong> <a href="https://etherscan.io/token/0x5239c659A13f043358D551360C3b8FF1251d76D9">View token on Etherscan</a></li>
+      <li><strong>Contract source code:</strong> Verified and publicly readable on Etherscan</li>
+      <li><strong>Treasury balance:</strong> <a href="https://etherscan.io/address/0x4ba2d7faae4453a122743a56736b0d4cebf10804">View treasury wallet</a></li>
+      <li><strong>Burn/redemption transactions:</strong> <a href="https://etherscan.io/address/0x50e3763b8ec8ce86b34ee3005e960577783b2964">View redemption wallet</a></li>
+    </ul>
+
+    <h2>Official Wallet Addresses</h2>
+    <table>
+      <tr><th>Treasury</th><td class="mono">0x4ba2d7faae4453a122743a56736b0d4cebf10804</td></tr>
+      <tr><th>Redemption / Burn</th><td class="mono">0x50e3763b8ec8ce86b34ee3005e960577783b2964</td></tr>
+    </table>
+    <p>These are the only official PGBP wallets. Do not send funds to any other address claiming to be PGBP.</p>
+
+    <h2>Contract Controls</h2>
+    <ul>
+      <li><strong>Minting:</strong> Disabled &mdash; no new tokens can be created</li>
+      <li><strong>Burn:</strong> Enabled &mdash; tokens can be permanently removed from circulation</li>
+      <li><strong>Contract:</strong> Immutable &mdash; cannot be upgraded or modified</li>
+      <li><strong>Source:</strong> Verified on Etherscan</li>
+    </ul>
+
+    <h2>Issuer Information</h2>
+    <table>
+      <tr><th>Legal Entity</th><td>PGBP PAYMENTS LTD</td></tr>
+      <tr><th>Company Number</th><td>16925298 (UK)</td></tr>
+      <tr><th>Contact</th><td><a href="mailto:info@pgbp.io">info@pgbp.io</a></td></tr>
+    </table>
+
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="/PGBP_Whitepaper_v1.0.pdf">Whitepaper (PDF)</a></li>
+      <li><a href="/about">About PGBP</a></li>
+      <li><a href="/token">Token Details</a></li>
+      <li><a href="/etherscan">Etherscan Verification Page</a></li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2025 PGBP PAYMENTS LTD &middot; <a href="/about">About</a> &middot; <a href="/token">Token</a> &middot; <a href="/etherscan">Verification</a></p>
+    </footer>
+  </div>
+</body>
+</html>
