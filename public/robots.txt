@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /blocked
+
+Sitemap: https://www.pgbp.io/sitemap.xml

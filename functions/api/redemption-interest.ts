@@ -1,12 +1,12 @@
-// Cloudflare Pages Function — Contact form handler
-// Receives a POST with { name, email, message } and emails compliance@pgbp.io via Resend.
+// Cloudflare Pages Function — Redemption interest registration
+// Receives a POST with { entityName, jurisdiction, email, useCase, estimatedVolume } and emails compliance@pgbp.io.
 // Env var required: RESEND_API_KEY
 
 export const onRequestPost: PagesFunction<{ RESEND_API_KEY: string }> = async ({ request, env }) => {
   try {
     const data: any = await request.json();
-    if (!data?.email || !data?.message) {
-      return new Response(JSON.stringify({ ok: false, error: "Missing email or message" }), {
+    if (!data?.email || !data?.entityName) {
+      return new Response(JSON.stringify({ ok: false, error: "Missing entityName or email" }), {
         status: 400, headers: { "Content-Type": "application/json" }
       });
     }
@@ -15,10 +15,10 @@ export const onRequestPost: PagesFunction<{ RESEND_API_KEY: string }> = async ({
       headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         from: "PGBP Website <no-reply@pgbp.io>",
-        to: ["info@pgbp.io"],
+        to: ["compliance@pgbp.io"],
         reply_to: data.email,
-        subject: `Website contact — ${data.subject || "general enquiry"}`,
-        text: `From: ${data.name || "(no name)"} <${data.email}>\nOrganisation: ${data.organisation || "(none)"}\n\nMessage:\n${data.message}`,
+        subject: `Redemption interest — ${data.entityName}`,
+        text: `Entity name: ${data.entityName}\nJurisdiction: ${data.jurisdiction || "(not provided)"}\nContact email: ${data.email}\nEstimated monthly volume: ${data.estimatedVolume || "(not provided)"}\n\nUse case:\n${data.useCase || "(none)"}`,
       }),
     });
     if (!r.ok) return new Response(JSON.stringify({ ok: false }), { status: 500, headers: { "Content-Type": "application/json" }});

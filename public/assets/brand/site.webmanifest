@@ -1,0 +1,11 @@
+{
+  "name": "Pegged GBP",
+  "short_name": "PGBP",
+  "icons": [
+    { "src": "/assets/brand/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/brand/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#135D68",
+  "background_color": "#0A2A2E",
+  "display": "standalone"
+}
