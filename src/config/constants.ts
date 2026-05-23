@@ -51,7 +51,7 @@ export const WHITEPAPER = {
   sha256: "b1a6822b7894bcd23d2e1a318fa6e70f5e3697c8d493fa85e458745e13cb8356",
   version: "1.0",
   publishedDate: "20 May 2026",
-  onChainTx: null as string | null, // set after on-chain hash recording
+  onChainTx: onChainTx: "0x86989630ccbf573c327d043a666addc96127c05f2d9576d642c97f51bd9ec0fc" as string | null, // recorded 23 May 2026, block 25154547
 };
 
 export const TERMS_DOC = {
@@ -59,7 +59,7 @@ export const TERMS_DOC = {
   sha256: "10ccaf17d0cc001b460dcd492ac85c5f127407ff6c65b0a10524660ecdfd0cca",
   version: "1.0",
   publishedDate: "20 May 2026",
-  onChainTx: null as string | null,
+  onChainTx: onChainTx: "0xac1ee385f482431ec8e22070079c028e411966d48f32b847f1fcc26e0c2aaaaa" as string | null, // recorded 23 May 2026, block 25154567
 };
 
 // Operational status — edit this block when reserves/banking/redemption go live
