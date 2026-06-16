@@ -57,8 +57,8 @@ export const WHITEPAPER = {
 export const TERMS_DOC = {
   url: "/assets/legal/PGBP_Terms_of_Use_v1.0.pdf",
   sha256: "10ccaf17d0cc001b460dcd492ac85c5f127407ff6c65b0a10524660ecdfd0cca",
-  version: "1.0"
-  publishedDate: "20 May 2026"
+  version: "1.0",
+  publishedDate: "20 May 2026",
   onChainTx: "0xac1ee385f482431ec8e22070079c028e411966d48f32b847f1fcc26e0c2aaaaa" as string | null, // recorded 23 May 2026, block 25154567
 };
 
