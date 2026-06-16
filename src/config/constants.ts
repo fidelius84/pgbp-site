@@ -2,7 +2,7 @@
 // Update any value here and the whole site picks it up.
 
 export const CONTRACT = "0x5239c659A13f043358D551360C3b8FF1251d76D9";
-export const TREASURY = "0x4ba2D7FAAe4453A122743A56736B0D4cEBF10804";
+export const TREASURY = "0x642aEb018894638F9ebf552dAC66dBa4Dfc3D858"; // PGBP Treasury Safe (2-of-3 multi-sig, migrated from 0x4ba2D7FAAe4453A122743A56736B0D4cEBF10804 on 15 Jun 2026)
 export const DEPLOYER_HISTORICAL = "0x50E3763B8eC8Ce86b34ee3005E960577783b2964";
 export const MAX_SUPPLY = 299_999_995n;
 export const MAX_SUPPLY_DISPLAY = "299,999,995";
