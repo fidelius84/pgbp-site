@@ -51,7 +51,7 @@ export const WHITEPAPER = {
   sha256: "2090d3a9baeaef94180a59705e09e8134764da42da52452d311a5e2c42584bb9",
   version: "1.1",
   publishedDate: "16 June 2026",
-  onChainTx: "0x86989630ccbf573c327d043a666addc96127c05f2d9576d642c97f51bd9ec0fc" as string | null, // recorded 23 May 2026, block 25154547
+  onChainTx: "0x97bbb6bd9678297e3a3e786c5028b56c1aa406f730d999b82c1c8185cbd1e0ac"
 };
 
 export const TERMS_DOC = {
