@@ -1,4 +1,4 @@
-﻿# PGBP Website — pgbp.io
+# PGBP Website — pgbp.io
 
 The production website for **Pegged GBP (PGBP)** — a GBP-denominated ERC-20 stablecoin on Ethereum, issued by PGBP PAYMENTS LTD.
 
@@ -90,28 +90,22 @@ Just push to `main`. Cloudflare Pages auto-builds.
 
 ---
 
-## Cloudflare geo-block — Redirect Rule
+## Cloudflare WAF — geo-block rule
 
-To redirect visitors from restricted jurisdictions to `/blocked`, create a Redirect Rule in the Cloudflare dashboard. **This feature is available on the Free plan** (up to 5 rules per zone).
+To block visitors from restricted jurisdictions, create a custom WAF rule in the Cloudflare dashboard.
 
-**Path:** Rules → Redirect Rules → Create rule
+**Path:** Security → WAF → Custom rules → Create rule
 
-> Note: This does NOT go under Security → WAF → Custom Rules. WAF Custom Rules don't support a Redirect action on any plan tier.
-
-**Rule name:** `PGBP geo-block`
-
-**Type:** Custom filter expression
-
-**Expression:**
+**Field expression:**
 ```
-(ip.geoip.country in {"US" "IR" "KP" "CU" "SY" "CN" "HK" "RU" "BY"}) and not (http.request.uri.path in {"/blocked" "/restricted" "/legal/terms" "/legal/privacy" "/legal/cookies"})
+(ip.geoip.country in {"US" "IR" "KP" "CU" "SY" "CN" "HK" "RU" "BY"})
+  and not (http.request.uri.path in {"/blocked" "/restricted" "/legal/terms" "/legal/privacy" "/legal/cookies"})
 ```
-**URL redirect type:** Static
-**URL:** `https://www.pgbp.io/blocked`
-**Status code:** 302 - Temporary Redirect
-**Preserve query string:** off
 
-This routes restricted-jurisdiction visitors to `/blocked` while keeping `/restricted` and the legal pages openly accessible from any country.
+**Action:** `Redirect` → `https://www.pgbp.io/blocked` (Type: Static, Status: 302)
+
+This routes restricted-jurisdiction visitors to `/blocked` while keeping `/restricted` and legal pages openly accessible from any country.
+
 ---
 
 ## Pre-launch checklist

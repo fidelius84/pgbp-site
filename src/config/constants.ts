@@ -2,7 +2,7 @@
 // Update any value here and the whole site picks it up.
 
 export const CONTRACT = "0x5239c659A13f043358D551360C3b8FF1251d76D9";
-export const TREASURY = "0x642aEb018894638F9ebf552dAC66dBa4Dfc3D858"; // PGBP Treasury Safe (2-of-3 multi-sig, migrated from 0x4ba2D7FAAe4453A122743A56736B0D4cEBF10804 on 15 Jun 2026)
+export const TREASURY = "0x4ba2D7FAAe4453A122743A56736B0D4cEBF10804";
 export const DEPLOYER_HISTORICAL = "0x50E3763B8eC8Ce86b34ee3005E960577783b2964";
 export const MAX_SUPPLY = 299_999_995n;
 export const MAX_SUPPLY_DISPLAY = "299,999,995";
@@ -47,40 +47,19 @@ export const RPC_ENDPOINTS = [
 ];
 
 export const WHITEPAPER = {
-  url: "/assets/whitepaper/PGBP_Whitepaper_v1.1.pdf",
-  sha256: "2090d3a9baeaef94180a59705e09e8134764da42da52452d311a5e2c42584bb9",
-  version: "1.1",
-  publishedDate: "16 June 2026",
-  onChainTx: "0x97bbb6bd9678297e3a3e786c5028b56c1aa406f730d999b82c1c8185cbd1e0ac"
+  url: "/assets/whitepaper/PGBP_Whitepaper_v1.0.pdf",
+  sha256: "b1a6822b7894bcd23d2e1a318fa6e70f5e3697c8d493fa85e458745e13cb8356",
+  version: "1.0",
+  publishedDate: "20 May 2026",
+  onChainTx: null as string | null, // set after on-chain hash recording
 };
-
-// Historical record of all published whitepaper versions, newest first.
-// Append a new entry (and update WHITEPAPER above to point at the new one) when publishing a revision.
-export const WHITEPAPER_VERSIONS = [
-  {
-    version: "1.1",
-    publishedDate: "16 June 2026",
-    notes: "Treasury wallet migrated to 2-of-3 multi-signature Safe (15 Jun 2026). See section 3.6 and Appendices A and B.",
-    url: "/assets/whitepaper/PGBP_Whitepaper_v1.1.pdf",
-    sha256: "2090d3a9baeaef94180a59705e09e8134764da42da52452d311a5e2c42584bb9",
-    onChainTx: "0x97bbb6bd9678297e3a3e786c5028b56c1aa406f730d999b82c1c8185cbd1e0ac",
-  },
-  {
-    version: "1.0",
-    publishedDate: "20 May 2026",
-    notes: "Initial publication.",
-    url: "/assets/whitepaper/PGBP_Whitepaper_v1.0.pdf",
-    sha256: "b1a6822b7894bcd23d2e1a318fa6e70f5e3697c8d493fa85e458745e13cb8356",
-    onChainTx: "0x86989630ccbf573c327d043a666addc96127c05f2d9576d642c97f51bd9ec0fc",
-  },
-];
 
 export const TERMS_DOC = {
   url: "/assets/legal/PGBP_Terms_of_Use_v1.0.pdf",
   sha256: "10ccaf17d0cc001b460dcd492ac85c5f127407ff6c65b0a10524660ecdfd0cca",
   version: "1.0",
   publishedDate: "20 May 2026",
-  onChainTx: "0xac1ee385f482431ec8e22070079c028e411966d48f32b847f1fcc26e0c2aaaaa" as string | null, // recorded 23 May 2026, block 25154567
+  onChainTx: null as string | null,
 };
 
 // Operational status — edit this block when reserves/banking/redemption go live

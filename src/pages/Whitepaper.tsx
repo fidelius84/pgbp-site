@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import Hero from "../components/Hero";
 import HashVerifier from "../components/HashVerifier";
-import { WHITEPAPER, WHITEPAPER_VERSIONS, EMAIL } from "../config/constants";
+import { WHITEPAPER, EMAIL } from "../config/constants";
 
 const sections = [
   { n: 1, t: "Executive summary", d: "One-page overview of the project, the design, the current state, and the roadmap." },
@@ -96,15 +96,13 @@ export default function Whitepaper() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
-                  {WHITEPAPER_VERSIONS.map((v) => (
-                    <tr key={v.version}>
-                      <td className="py-3 pr-4 font-medium text-teal">{v.version}</td>
-                      <td className="py-3 pr-4 text-ink/70">{v.publishedDate}</td>
-                      <td className="py-3 pr-4 text-ink/70">{v.notes}</td>
-                      <td className="py-3 pr-4"><a href={v.url} className="text-teal hover:underline">Download ↓</a></td>
-                      <td className="py-3 font-mono text-xs text-ink/60 break-all">{v.sha256.slice(0,8)}…{v.sha256.slice(-6)}</td>
-                    </tr>
-                  ))}
+                  <tr>
+                    <td className="py-3 pr-4 font-medium text-teal">{WHITEPAPER.version}</td>
+                    <td className="py-3 pr-4 text-ink/70">{WHITEPAPER.publishedDate}</td>
+                    <td className="py-3 pr-4 text-ink/70">Initial publication</td>
+                    <td className="py-3 pr-4"><a href={WHITEPAPER.url} className="text-teal hover:underline">Download ↓</a></td>
+                    <td className="py-3 font-mono text-xs text-ink/60 break-all">{WHITEPAPER.sha256.slice(0,8)}…{WHITEPAPER.sha256.slice(-6)}</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
