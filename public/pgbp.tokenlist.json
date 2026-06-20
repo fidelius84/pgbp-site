@@ -1,0 +1,26 @@
+{
+  "name": "Pegged GBP Token List",
+  "timestamp": "2026-06-20T03:18:06.000Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "keywords": [
+    "pgbp",
+    "sterling",
+    "gbp",
+    "stablecoin"
+  ],
+  "logoURI": "https://pgbp.io/logo.png",
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x5239c659A13f043358D551360C3b8FF1251d76D9",
+      "name": "Pegged GBP",
+      "symbol": "PGBP",
+      "decimals": 18,
+      "logoURI": "https://pgbp.io/logo.png"
+    }
+  ]
+}
