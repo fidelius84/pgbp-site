@@ -52,6 +52,7 @@ export default function About() {
                 <Row label="Legal name" value={COMPANY.legalName} />
                 <Row label="Company number" value={COMPANY.companyNo} />
                 <Row label="Jurisdiction" value={COMPANY.jurisdiction} />
+                <Row label="Director" value={COMPANY.director} />
                 <Row label="Registered office" value={COMPANY.registeredOffice} />
                 <Row label="Contact" value={<a href={`mailto:${EMAIL.info}`} className="text-teal hover:underline">{EMAIL.info}</a>} />
                 <Row label="Companies House" value={<a href={COMPANY.companiesHouseUrl} target="_blank" rel="noopener noreferrer" className="text-teal hover:underline">Public record ↗</a>} />

@@ -12,6 +12,7 @@ export const COMPANY = {
   legalName: "PGBP PAYMENTS LTD",
   companyNo: "16925298",
   jurisdiction: "England and Wales",
+  director: "Muhammed Al-Mumin",
   registeredOffice: "17 Hanover Square, London, W1S 1BN",
   companiesHouseUrl: "https://find-and-update.company-information.service.gov.uk/company/16925298",
 };
